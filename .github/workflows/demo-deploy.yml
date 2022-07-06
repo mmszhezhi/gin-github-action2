@@ -33,3 +33,14 @@ jobs:
           name: mmszhezhi/fuckworld
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+
+
+      - name: Update the API service
+        uses: appleboy/ssh-action@v0.0.6
+        with:
+            host: ${{ secrets.ssh_host }}
+            username: deploy
+            key: ${{ secrets.ssh_key }}
+            script_stop: true
+            script: |
+              cd golang && docker-compose pull && docker-compose up -d
