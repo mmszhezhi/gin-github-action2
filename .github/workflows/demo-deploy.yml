@@ -38,9 +38,9 @@ jobs:
       - name: Update the API service
         uses: appleboy/ssh-action@v0.0.6
         with:
-            host: ${{ secrets.ssh_host }}
+            host: ${{ secrets.SSH_HOST }}
             username: herman
-            key: ${{ secrets.ssh_key }}
+            key: ${{ secrets.SSH_KEY }}
             script_stop: true
             script: |
               cd /home/herman/Desktop/dockers/gin-github-action && docker-compose pull && docker-compose up -d
