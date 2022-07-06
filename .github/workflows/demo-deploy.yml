@@ -35,7 +35,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
 
-      - name: Update the API service
+      - name: Update the API service1
         uses: appleboy/ssh-action@v0.0.6
         with:
             host: ${{ secrets.SSH_HOST }}
