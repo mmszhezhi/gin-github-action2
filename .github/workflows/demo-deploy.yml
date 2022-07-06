@@ -39,8 +39,8 @@ jobs:
         uses: appleboy/ssh-action@v0.0.6
         with:
             host: ${{ secrets.ssh_host }}
-            username: deploy
+            username: herman
             key: ${{ secrets.ssh_key }}
             script_stop: true
             script: |
-              cd golang && docker-compose pull && docker-compose up -d
+              cd /home/herman/Desktop/dockers/gin-github-action && docker-compose pull && docker-compose up -d
