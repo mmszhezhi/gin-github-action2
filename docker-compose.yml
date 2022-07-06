@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  go-github-action-helloworld-services:
+    image: adon988/go-github-action-helloworld
+    restart: always
+    ports:
+      - 8000:8080
