@@ -1,4 +1,4 @@
-FROM plugins/base:linux-amd64
+FROM ubuntu
 
 EXPOSE 8080
 
