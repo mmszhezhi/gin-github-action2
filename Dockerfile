@@ -4,4 +4,4 @@ EXPOSE 8080
 
 COPY release/fuckworld /bin/
 
-ENTRYPOINT ["/bin/fuckwold"]
+ENTRYPOINT ["/bin/fuckworld"]
