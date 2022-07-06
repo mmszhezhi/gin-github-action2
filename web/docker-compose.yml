@@ -1,0 +1,9 @@
+web:
+  image: tehsphinx/docker-golang-gin
+  command: gin
+  ports:
+    - "3000:3000"
+  volumes:
+    - ./../..:/go/src
+  environment:
+    - WORKINGDIR=/go/src/github.com/yourname/yourapp
