@@ -11,7 +11,7 @@ jobs:
         platform: [ubuntu-latest]
     runs-on: ${{ matrix.platform }}
     steps:
-      - name: Update the API service23
+      - name: Update the API service2300
         uses: appleboy/ssh-action@v0.0.6
         with:
             host: ${{ secrets.SSH_HOST }}
