@@ -44,4 +44,4 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script_stop: true
           script: |
-            cd /home/herman/Desktop/dockers/gin-github-action && docker-compose pull && docker-compose up -d
+            cd /home/herman/Desktop/dockers/gin-github-action && sudo docker-compose pull && sudo docker-compose up -d
